@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout_flight"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/whiteTwo"
+    android:layout_marginTop="10dp"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text_view_departure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_alignBaseline="@+id/text_view_price"/>
+
+        <TextView
+            android:id="@+id/text_view_arrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text_view_departure"
+            android:layout_toEndOf="@+id/text_view_departure"
+            android:layout_alignBaseline="@+id/text_view_price"/>
+
+        <TextView
+            android:id="@+id/text_view_departure_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_departure"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <View
+            android:id="@+id/view_divider_time"
+            android:layout_width="20dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/text_view_departure_time"
+            android:layout_toEndOf="@+id/text_view_departure_time"
+            android:layout_centerVertical="true"
+            android:background="@color/coolGrey"/>
+
+        <TextView
+            android:id="@+id/text_view_arrival_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_departure"
+            android:layout_toRightOf="@+id/view_divider_time"
+            android:layout_toEndOf="@+id/view_divider_time"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/text_view_duration_stops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_departure_time"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"/>
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dashed_line"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/text_view_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/button_buy_ticket"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_price"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/recycler_row_buy"
+            android:textSize="16sp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginEnd="-5dp"
+            android:backgroundTint="@color/topaz"
+            android:textStyle="bold"
+            android:textColor="@color/whiteTwo"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_buy_ticket"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="14sp"
+            android:text="@string/recycler_row_price_label"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Maxmilhas</string>
+    <string name="activity_filter_toolbar_title">FILTROS</string>
+    <string name="activity_order_toolbar_title">ORDENAÇÃO</string>
+    <string name="activity_main_toolbar_title">VOOS</string>
+    <string name="activity_filter_morning">MANHÃ - 06:00 às 11:59</string>
+    <string name="activity_filter_afternoon">TARDE - 12:00 às 17:59</string>
+    <string name="activity_filter_night">NOITE - 18:00 às 23:59</string>
+    <string name="activity_filter_dawn">MADRUGADA - 00:00 às 05:59</string>
+    <string name="recycler_row_buy">Comprar</string>
+    <string name="recycler_row_price_label">Valor total c/ taxas</string>
+    <string name="part_filter_stop_nonstop_flight">VOO DIRETO</string>
+    <string name="part_filter_stop_onestop_flight">1 PARADA</string>
+    <string name="custom_toolbar_clear">LIMPAR</string>
+    <string name="custom_toolbar_title">TITLE</string>
+    <string name="custom_toolbar_back_btn_description">Back button</string>
+    <string name="custom_bottom_bar_sort">ORDENAR</string>
+    <string name="custom_bottom_bar_filter">FILTRAR</string>
+    <string name="activity_sort_sort">Ordenar</string>
+    <string name="activity_sort_biggest_price">Maior preço</string>
+    <string name="activity_sort_smaller_price">Menor preço</string>
+    <string name="activity_sort_smaller_price_duration">Menor Preço e Menor tempo de voo</string>
+    <string name="activity_sort_apply_order">Aplicar ordenação</string>
+    <string name="activity_filter_time">Filtrar por Horário</string>
+    <string name="activity_filter_stops">Filtrar por Paradas</string>
+    <string name="activity_filter_apply_filter">Aplicar filtro</string>
+    <string name="inbound_fragment_informative_toast">Ótima escolha por apenas: R$</string>
+    <string name="inbound_fragment_filters_label">Com filtro: </string>
+    <string name="inbound_fragment_filters_label2"> voos</string>
+    <string name="outbound_fragment_informative_label">Ótima escolha por apenas: R$</string>
+    <string name="outbound_fragment_filters">Com filtro: </string>
+    <string name="outbound_fragment_filters2"> voos</string>
+</resources>

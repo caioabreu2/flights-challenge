@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout_time"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="35dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginLeft="30dp">
+
+    <CheckBox
+        android:id="@+id/morning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_filter_morning"
+        android:tag="1"
+        android:textColor="@color/battleshipGrey"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/afternoon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_filter_afternoon"
+        android:tag="2"
+        android:textColor="@color/battleshipGrey"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/night"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_filter_night"
+        android:tag="3"
+        android:textColor="@color/battleshipGrey"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/dawn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_filter_dawn"
+        android:tag="4"
+        android:textColor="@color/battleshipGrey"
+        android:textStyle="bold"/>
+
+</LinearLayout>

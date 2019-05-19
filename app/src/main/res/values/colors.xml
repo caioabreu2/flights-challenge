@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2d8abd</color>
+    <color name="colorPrimaryDark">#2d8abd</color>
+    <color name="colorAccent">#1abc9c</color>
+
+    <color name="white">#f6f6f6</color>
+    <color name="whiteTwo">#ffffff</color>
+    <color name="battleshipGrey">#757777</color>
+    <color name="coolGrey">#879395</color>
+    <color name="bluish">#2d8abd</color>
+    <color name="topaz">#1abc9c</color>
+    <color name="otherGrey">#e7edf3</color>
+</resources>

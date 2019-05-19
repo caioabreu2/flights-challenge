@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_with_views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp">
+
+        <ImageView
+            android:id="@+id/image_view_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp"
+            android:src="@drawable/ic_time"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_filter_time"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/image_view_icon"
+            android:layout_toEndOf="@+id/image_view_icon"
+            android:textStyle="bold"
+            android:textColor="@color/bluish"/>
+
+        <include
+            android:id="@+id/part_filter_time"
+            layout="@layout/part_filter_time" />
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/coolGrey"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/part_filter_time"/>
+
+        <ImageView
+            android:id="@+id/image_view_icon_stops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_below="@+id/view_divider"
+            android:src="@drawable/ic_stops"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_filter_stops"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/image_view_icon_stops"
+            android:layout_toEndOf="@+id/image_view_icon_stops"
+            android:layout_below="@+id/view_divider"
+            android:textStyle="bold"
+            android:textColor="@color/bluish"/>
+
+        <include
+            android:id="@+id/part_filter_stops"
+            layout="@layout/part_filter_stops"
+            android:layout_below="@+id/image_view_icon_stops"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:id="@+id/button_apply_filter"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/part_filter_stops"
+            android:layout_marginTop="30dp"
+            android:text="@string/activity_filter_apply_filter"
+            android:textSize="16sp"
+            android:backgroundTint="@color/topaz"
+            android:textStyle="bold"
+            android:textColor="@color/whiteTwo"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

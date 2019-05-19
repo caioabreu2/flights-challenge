@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp">
+
+        <ImageView
+            android:id="@+id/image_view_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp"
+            android:src="@drawable/ic_order"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_sort_sort"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/image_view_icon"
+            android:layout_toEndOf="@+id/image_view_icon"
+            android:textStyle="bold"
+            android:textColor="@color/bluish"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/image_view_icon">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_sort_biggest_price"
+                android:tag="1"
+                android:textColor="@color/battleshipGrey"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_sort_smaller_price"
+                android:tag="2"
+                android:textColor="@color/battleshipGrey"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_sort_smaller_price_duration"
+                android:tag="3"
+                android:textColor="@color/battleshipGrey"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_apply_order"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/radio_group_order"
+            android:layout_marginTop="30dp"
+            android:text="@string/activity_sort_apply_order"
+            android:textSize="16sp"
+            android:backgroundTint="@color/topaz"
+            android:textStyle="bold"
+            android:textColor="@color/whiteTwo"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
